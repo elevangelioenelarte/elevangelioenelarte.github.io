@@ -35,33 +35,60 @@ footer a{color:var(--gris)}
 </header>
 
 <h2>Política de privacidad</h2>
-<p>Última actualización: 11 de octubre de 2026.</p>
-<p>El Evangelio en el Arte es un proyecto de difusión de las lecturas de la misa. Esta página explica qué datos trata y para qué.</p>
+<p>Última actualización: 13 de octubre de 2026.</p>
+<p>El Evangelio en el Arte es un proyecto sin ánimo de lucro que publica cada día las lecturas de la misa en vídeo, acompañadas de arte sacro de dominio público. Esta política explica qué datos trata el proyecto, incluida su aplicación conectada a las API de Google, para qué los usa, dónde los guarda, con quién los comparte y cómo puedes pedir que se borren.</p>
 
-<h2>La aplicación de YouTube</h2>
-<p>El proyecto usa una aplicación propia, conectada a los Servicios de API de YouTube, con un único fin: publicar y gestionar los vídeos de su propio canal. La aplicación solo la usa el titular del canal.</p>
+<h2>1. Responsable</h2>
+<p>Responsable del tratamiento: El Evangelio en el Arte. Contacto: <a href="mailto:elevangelioenelarte@gmail.com">elevangelioenelarte@gmail.com</a>.</p>
+
+<h2>2. La aplicación y los datos de usuario de Google</h2>
+<p>El proyecto tiene una aplicación propia registrada en Google Cloud, llamada «El Evangelio en el Arte». No es una aplicación pública: no tiene usuarios externos y solo la autoriza el titular del canal de YouTube del proyecto (@ElEvangelioenelArte) con su propia cuenta de Google. Ningún espectador ni ninguna otra persona inicia sesión en ella.</p>
+<p><strong>Permisos que solicita y para qué se usa cada uno:</strong></p>
 <ul>
-<li>No recoge, almacena ni comparte datos de espectadores ni de otros usuarios de YouTube.</li>
-<li>Accede únicamente al canal del proyecto, para subir vídeos, subtítulos y listas de reproducción.</li>
-<li>El titular puede retirar ese acceso en cualquier momento desde <a href="https://myaccount.google.com/permissions">la configuración de seguridad de su cuenta de Google</a>.</li>
+<li><strong>youtube.upload</strong>: subir los vídeos diarios de las lecturas al canal del proyecto.</li>
+<li><strong>youtube</strong>: gestionar el propio canal: crear y ordenar listas de reproducción, poner títulos, descripciones, miniaturas y traducciones de los títulos.</li>
+<li><strong>youtube.force-ssl</strong>: subir subtítulos y publicar o fijar comentarios propios del canal en sus propios vídeos (por ejemplo, el enlace al vídeo siguiente).</li>
 </ul>
-<p>El uso de YouTube está sujeto a los <a href="https://www.youtube.com/t/terms">Términos del Servicio de YouTube</a> y a la <a href="https://policies.google.com/privacy">Política de Privacidad de Google</a>.</p>
+<p><strong>Datos de Google a los que accede:</strong> solo los datos del canal del proyecto necesarios para esas tareas: identificador y nombre del canal, sus vídeos, listas de reproducción, subtítulos y comentarios propios, y estadísticas públicas del canal (número de vídeos y suscriptores). La aplicación no lee correos, contactos, archivos ni ningún otro dato de la cuenta de Google, y no recoge datos de los espectadores ni de otros usuarios de YouTube.</p>
+<p><strong>Cómo se usan:</strong> exclusivamente para publicar y mantener el contenido del propio canal. No se usan para publicidad, no se venden, no se ceden a terceros y no se usan para entrenar modelos de inteligencia artificial.</p>
+<p><strong>Dónde se guardan y cómo se protegen:</strong> la aplicación guarda un único token de autorización (refresh token) como secreto cifrado de GitHub Actions, el servicio que ejecuta las publicaciones automáticas. Ese token no se muestra en registros ni se comparte. Los datos del canal que la aplicación consulta se usan en el momento y no se guardan en bases de datos.</p>
+<p><strong>Con quién se comparten:</strong> con nadie. Los textos bíblicos y las imágenes de arte que se publican son de dominio público y no contienen datos de usuarios. Para generar la voz y la reflexión del día se envían a la API de Gemini de Google únicamente esos textos públicos, nunca datos de usuarios de Google.</p>
+<p><strong>Conservación y borrado:</strong> el token se conserva mientras el proyecto publique vídeos. Se puede revocar en cualquier momento desde <a href="https://myaccount.google.com/permissions">la configuración de seguridad de la cuenta de Google</a>; en ese caso deja de funcionar al instante y se elimina de GitHub. También puedes pedir el borrado escribiendo al correo de contacto; se atiende en un plazo máximo de 30 días.</p>
+<p><strong>Uso limitado:</strong> el uso que hace esta aplicación de la información recibida de las API de Google se ajusta a la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de API de Google</a>, incluidos los requisitos de uso limitado. El uso de YouTube está sujeto a los <a href="https://www.youtube.com/t/terms">Términos del Servicio de YouTube</a> y a la <a href="https://policies.google.com/privacy">Política de Privacidad de Google</a>.</p>
 
-<h2>Parroquias que piden el vídeo dominical</h2>
-<p>Si una parroquia solicita recibir el vídeo del domingo, se guardan los datos que ella misma facilita: nombre de la parroquia, localidad, correo de contacto y horario de misas.</p>
+<h2>3. Lista de correo y canal de WhatsApp</h2>
+<p>Si te inscribes voluntariamente en la lista de correo diaria, se guarda tu dirección de correo y, si lo das, tu nombre. Se usan solo para enviarte cada día los vídeos nuevos y las novedades del proyecto. La base legal es tu consentimiento. Cada envío incluye un enlace para darte de baja, y al darte de baja tus datos se borran. Si te unes al canal de WhatsApp, el proyecto no ve tu número de teléfono; WhatsApp lo trata según su propia política.</p>
+
+<h2>4. Parroquias que piden el vídeo dominical</h2>
+<p>Si una parroquia solicita recibir el vídeo del domingo, se guardan los datos que ella misma facilita: nombre de la parroquia, localidad, correo de contacto y horario de misas. Se usan para preparar y enviar el vídeo cada semana, con base en su consentimiento, no se comparten con nadie y se conservan mientras quiera recibir el envío. Para darse de baja basta con responder a cualquier envío con la palabra BAJA.</p>
+
+<h2>5. Esta página web</h2>
+<p>No usa cookies ni herramientas de análisis. Está alojada en GitHub Pages, que puede registrar datos técnicos de acceso (como la dirección IP) según su propia política de privacidad.</p>
+
+<h2>6. Tus derechos</h2>
+<p>Puedes pedir acceso, rectificación, supresión, oposición, limitación y portabilidad de tus datos escribiendo a <a href="mailto:elevangelioenelarte@gmail.com">elevangelioenelarte@gmail.com</a>. Si no quedas satisfecho, puedes reclamar ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es">aepd.es</a>).</p>
+
+<h2>7. Menores</h2>
+<p>El proyecto no recoge a sabiendas datos de menores de 14 años. La lista de correo es solo para mayores de esa edad.</p>
+
+<h2>8. Cambios</h2>
+<p>Si esta política cambia, se publicará aquí con la nueva fecha de actualización.</p>
+
+<h2 lang="en">Privacy policy summary (English)</h2>
+<div lang="en">
+<p>El Evangelio en el Arte is a non-profit project that publishes daily videos of the Catholic Mass readings illustrated with public-domain sacred art. Its Google Cloud application is used only by the owner of the project's own YouTube channel (@ElEvangelioenelArte); there are no external users.</p>
 <ul>
-<li><strong>Para qué:</strong> preparar el vídeo con esos datos y enviarlo cada semana.</li>
-<li><strong>Base:</strong> la solicitud y el consentimiento de quien lo pide.</li>
-<li><strong>Con quién se comparten:</strong> con nadie. Se guardan en los servicios de Google que usa el proyecto.</li>
-<li><strong>Cuánto tiempo:</strong> mientras la parroquia quiera recibir el envío.</li>
-<li><strong>Cómo darse de baja o pedir que se borren:</strong> respondiendo a cualquier envío con la palabra BAJA o escribiendo al correo de contacto.</li>
+<li><strong>Scopes and purpose:</strong> youtube.upload (upload the daily videos), youtube (manage the channel's own playlists, titles, descriptions, thumbnails and localizations), youtube.force-ssl (upload captions and post or pin the channel's own comments on its own videos).</li>
+<li><strong>Data accessed:</strong> only the project channel's own data (channel id and title, its videos, playlists, captions, own comments and public statistics). No viewer data or data of other YouTube users is collected. No Gmail, contacts, Drive or other Google account data is accessed.</li>
+<li><strong>Use:</strong> solely to publish and maintain the channel's own content. Data is never sold, never shared with third parties, never used for advertising and never used to train AI models.</li>
+<li><strong>Storage and security:</strong> a single OAuth refresh token is stored as an encrypted GitHub Actions secret. Channel data is used at request time and not stored.</li>
+<li><strong>Retention and deletion:</strong> the token is kept while the project publishes videos. It can be revoked at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, after which it is deleted. Deletion requests: elevangelioenelarte@gmail.com, answered within 30 days.</li>
+<li><strong>Limited Use:</strong> this app's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</li>
 </ul>
-
-<h2>Esta página web</h2>
-<p>No usa cookies propias ni herramientas de análisis. Está alojada en GitHub Pages, que puede registrar datos técnicos de acceso según su propia política.</p>
+</div>
 
 <h2>Contacto</h2>
-<p>Para cualquier consulta o para ejercer tus derechos sobre tus datos: <a href="mailto:elevangelioenelarte@gmail.com">elevangelioenelarte@gmail.com</a>.</p>
+<p>Para cualquier consulta: <a href="mailto:elevangelioenelarte@gmail.com">elevangelioenelarte@gmail.com</a>.</p>
 
 <footer><a href="./">Inicio</a> · <a href="privacidad.html">Política de privacidad</a> · <a href="condiciones.html">Condiciones del servicio</a><br>Contacto: <a href="mailto:elevangelioenelarte@gmail.com">elevangelioenelarte@gmail.com</a></footer>
 </main>
