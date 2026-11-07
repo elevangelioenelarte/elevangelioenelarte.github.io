@@ -1,0 +1,16 @@
+{
+  "name": "Cuaderno",
+  "short_name": "Cuaderno",
+  "description": "Cuaderno con Apple Pencil, carpetas, manuscrito a texto, sesiones en vivo y secretario con Claude.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f6f1e8",
+  "theme_color": "#f6f1e8",
+  "lang": "es",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
